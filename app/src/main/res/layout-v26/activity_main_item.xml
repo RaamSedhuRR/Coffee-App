@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorMainPrimary"
+    android:backgroundTint="@color/colorMainPrimary"
+    android:layout_marginTop="@dimen/dimension_small"
+    app:cardCornerRadius="@dimen/dimension_small">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimension_xx_small"
+        android:layout_marginStart="@dimen/dimension_xx_small"
+        android:layout_marginEnd="@dimen/dimension_xx_small"
+        android:layout_margin="@dimen/dimension_x_small"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimension_medium"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textColor="@color/colorMainPrimaryVariant"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_large"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension_small"
+                android:justificationMode="inter_word"
+                android:textColor="@color/colorOnMainPrimary"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/text_size_medium"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
